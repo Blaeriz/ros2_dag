@@ -33,3 +33,9 @@ npm dev run
 1. Extremely easy to use.
 2. Minimal setup time.
 3. Easy to pickup for a first timer.
+
+
+## Recomendations 
+
+1. Using D3.js or [Svelvet](https://www.svelvet.io/) for DAGs instead of Mermaid due to multiple factors but mainly for customizability.
+2. Using Tauri for cross platform compilation because it would make it possible to run the app on web/deskop and mobile(for niche mobile robotics cases, mainly Android).
