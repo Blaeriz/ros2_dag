@@ -1,38 +1,35 @@
-# sv
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+## Running the project
 
-## Creating a project
-
-If you're seeing this, you've probably already done this step. Congrats!
+Ensure you have ros2_jazzy installed (I do not know if it will work with humble).
 
 ```bash
 # create a new project in the current directory
-npx sv create
+npm i
 
 # create a new project in my-app
-npx sv create my-app
+npm dev run
 ```
 
-## Developing
+## How it works
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+1. A script in ```/src/lib exists``` `mermaid.ts` which uses `rclnodejs` to get information.
+2. It is then saved in a file in the same dir `mermaid-output.ts` from which it is then exported to ```/src/routes/App.svelte```
 
-```bash
-npm run dev
+## DAG
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+1. This application for the sole purpose of the gsoc excercises is using [mermaid](https://mermaid.js.org/) to create and render the DAG
 
-## Building
 
-To create a production version of your app:
+## Why?
 
-```bash
-npm run build
-```
+### Svelte
 
-You can preview the production build with `npm run preview`.
+1. Extremely concise components can be written in svelte
+2. Although not used in this project, [Runes](https://svelte.dev/blog/runes) are extremely powerful and could be used to make development very efficient.
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+### Mermaid
+
+1. Extremely easy to use.
+2. Minimal setup time.
+3. Easy to pickup for a first timer.
