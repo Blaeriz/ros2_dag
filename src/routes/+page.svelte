@@ -1,19 +1,6 @@
 <script lang="ts">
-  //import { Node, Svelvet } from 'svelvet';
-  //import MyNode from '/home/blaeriz/ros2_dag/src/routes/MyNode.svelte';
   import App from './App.svelte';
-
-
 </script>
-  
-  <!-- <Svelvet theme="dark" controls>
-    <MyNode />
-    <Node id="alpha" bgColor="red" label="Default Node" />
-    
-  </Svelvet> -->
-
-  <!-- <Graph/> -->
-
   <App/>
   
   <style>
